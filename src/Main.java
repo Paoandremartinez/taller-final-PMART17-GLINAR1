@@ -43,36 +43,95 @@ public class Main {
             switch (opcion)
             {
                 case 1:
-                    System.out.println("******************************************************");
-                    System.out.println("****************** DATOS PRIMITIVOS ******************\n");
-                    System.out.println("**     01. Explicación byte.                        **");
-                    System.out.println("**     02. Explicación short.                       **");
-                    System.out.println("**     03. Explicación int                          **");
-                    System.out.println("**     04. Explicación long                         **");
-                    System.out.println("**     05. Explicación float                        **");
-                    System.out.println("**     06. Explicación double                       **");
-                    System.out.println("**     07. Explicación char                         **");
-                    System.out.println("**     08. Explicación bolean                       **");
-                    System.out.println("**     09. Salir                                    **");
-                    System.out.println("******************************************************\n");
+                    System.out.println("******************************************************************");
+                    System.out.println("*******              1. DATOS PRIMITIVOS                   *******");
+                    System.out.println("******************************************************************");
+                    System.out.println("******************************************************************");
+                    System.out.println("*     1. Explicación byte.                                       *");
+                    System.out.println("*     2. Explicación short.                                      *");
+                    System.out.println("*     3. Explicación int                                         *");
+                    System.out.println("*     4. Explicación long                                        *");
+                    System.out.println("*     5. Explicación float                                       *");
+                    System.out.println("*     6. Explicación double                                      *");
+                    System.out.println("*     7. Explicación char                                        *");
+                    System.out.println("*     8. Explicación bolean                                      *");
+                    System.out.println("*     9. Salir                                                   *");
+                    System.out.println("*                                                                *");
+                    System.out.println("******************************************************************");
                     break;
 
                 case 2:
                     System.out.println("******************************************************************");
-                    System.out.println("*******                     STRING                      **********");
+                    System.out.println("*******                  2. STRING                      **********");
                     System.out.println("******************************************************************");
                     System.out.println("******************************************************************");
-                    System.out.println("* El String es un objeto el cual nos permite                     *");
-                    System.out.println("* almacenar muchos caracteres,te mostramos                       *");
-                    System.out.println("* ejemplos del string                                            *");
-                    System.out.println("* String mensaje=\"hi you\"se inicializa la variable             *");
-                    System.out.println("* String nombre= new String (\"Juan\"); usando constructor       *");
-                    System.out.println("*                      **");
+                    System.out.println("* El tipo de dato String es una clase que representa cadenas de  *");
+                    System.out.println("* caracteres y se utiliza ampliamente en aplicaciones para       *");
+                    System.out.println("* almacenar y manipular texto. En Java, una cadena de texto se   *");
+                    System.out.println("* define utilizando comillas dobles (\" \") alrededor del texto    *");
+                    System.out.println("*                                                                *");
+                    System.out.println("* String mensaje=\"hi you\"se inicializa la variable               *");
+                    System.out.println("* String nombre= new String (\"Juan\"); usando constructor         *");
+                    System.out.println("*                                                                *");
                     System.out.println("****************************************************************\n");
                     break;
                 case 3:
                     break;
                 case 4:
+                    System.out.println("******************************************************************");
+                    System.out.println("*******          4. TIPO OPERADORES                        *******");
+                    System.out.println("******************************************************************");
+                    System.out.println("******************************************************************");
+                    System.out.println("*                                                                *");
+                    System.out.println("*  1. Aritmeticos                                                *");
+                    System.out.println("*  2. Relacionales                                               *");
+                    System.out.println("*  3. Logicos                                                    *");
+                    System.out.println("*  4. Asignación                                                 *");
+                    System.out.println("*  5. Incremento / Decremento                                    *");
+                    System.out.println("*                                                                *");
+                    System.out.println("******************************************************************");
+
+                    int opc4 = scannerMainFirst.nextInt();
+                    switch (opc4)
+                    {
+                        case 1:
+                            System.out.println("******************************************************************");
+                            System.out.println("*******            1. ARITMETICOS                       **********");
+                            System.out.println("******************************************************************");
+                            System.out.println("******************************************************************");
+                            break;
+                        case 2:
+                            System.out.println("******************************************************************");
+                            System.out.println("*******            2. RELACIONALES                      **********");
+                            System.out.println("******************************************************************");
+                            System.out.println("******************************************************************");
+
+                            break;
+                        case 3:
+                            System.out.println("******************************************************************");
+                            System.out.println("*******            3. LOGICOS                           **********");
+                            System.out.println("******************************************************************");
+                            System.out.println("******************************************************************");
+
+                            break;
+                        case 4:
+                            System.out.println("******************************************************************");
+                            System.out.println("*******            4. ASIGNACIÓN                        **********");
+                            System.out.println("******************************************************************");
+                            System.out.println("******************************************************************");
+
+                            break;
+                        case 5:
+                            System.out.println("******************************************************************");
+                            System.out.println("*******         5. INCREMENTO / DECREMENTO              **********");
+                            System.out.println("******************************************************************");
+                            System.out.println("******************************************************************");
+
+                            break;
+
+                    }
+
+                    System.out.println();
                     break;
                 case 5:
                     break;
