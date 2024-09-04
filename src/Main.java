@@ -49,7 +49,6 @@ public class Main {
             switch (opcion)
             {
                 case 1:
-<<<<<<< HEAD
                     System.out.println("******************************************************************");
                     System.out.println("*******              1. DATOS PRIMITIVOS                   *******");
                     System.out.println("******************************************************************");
@@ -69,7 +68,6 @@ public class Main {
                     break;
 
                 case 2:
-=======
 
                         System.out.println("******************************************************************");
                         System.out.println("*******              1. DATOS PRIMITIVOS                   *******");
@@ -89,8 +87,7 @@ public class Main {
                         System.out.println("Por favor digita tu mejor opción:  ");
 
                         break;
-               case 2:
->>>>>>> 
+               case 3:
                     System.out.println("******************************************************************");
                     System.out.println("*******                  2. STRING                      **********");
                     System.out.println("******************************************************************");
@@ -105,9 +102,9 @@ public class Main {
                     System.out.println("*                                                                *");
                     System.out.println("******************************************************************");
                     break;
-                case 3:
-                    break;
                 case 4:
+                    break;
+                case 5:
                     do {
                     System.out.println("******************************************************************");
                     System.out.println("*******          4. TIPO OPERADORES                        *******");
