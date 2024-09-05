@@ -49,7 +49,7 @@ public class Main {
             switch (opcion)
             {
                 case 1:
-
+                do {
                     System.out.println("******************************************************************");
                     System.out.println("*******              1. DATOS PRIMITIVOS                   *******");
                     System.out.println("******************************************************************");
@@ -67,6 +67,29 @@ public class Main {
                     System.out.println("******************************************************************");
                     System.out.println("Por favor digita tu mejor opción:  ");
 
+                    opc1 = scannerMainFirst.nextInt();
+
+                    switch (opc1){
+
+                        case 1:
+                            System.out.println("*******************************************************************");
+                            System.out.println("*******               1. Explicación byte                **********");
+                            System.out.println("*******************************************************************");
+                            System.out.println("un byte es un tipo de dato primitivo que representa un valor       ");
+                            System.out.println("numérico entero de 8 bits.Esto significa que puede almacenar       ");
+                            System.out.println("valores en el rango de -128 a 127.                                 ");
+                        break;
+                        default:
+                            if (opc1 == 6){
+
+                                System.out.println("Si quieres volver al menú Principal presiona enter");
+                                scannerMainFirst.nextLine();
+                                scannerMainFirst.nextLine();
+                          }
+                    }
+
+                }
+                while (opc1 != 6);
                     break;
                 case 2:
                     System.out.println("******************************************************************");
