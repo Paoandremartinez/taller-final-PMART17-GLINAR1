@@ -1,3 +1,4 @@
+import javax.naming.BinaryRefAddr;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.sql.SQLOutput;
@@ -55,14 +56,14 @@ public class Main {
                     System.out.println("******************************************************************");
                     System.out.println("******************************************************************");
                     System.out.println("*     1. Explicación byte.                                       *");
-                    System.out.println("*     2. Explicación short.                                      *");
+                    System.out.println("*     2. Explicación short                                      *");
                     System.out.println("*     3. Explicación int                                         *");
                     System.out.println("*     4. Explicación long                                        *");
                     System.out.println("*     5. Explicación float                                       *");
                     System.out.println("*     6. Explicación double                                      *");
                     System.out.println("*     7. Explicación char                                        *");
                     System.out.println("*     8. Explicación bolean                                      *");
-                    System.out.println("*     9. Salir                                                   *");
+                    System.out.println("*     9. Volver al menu principal                                *");
                     System.out.println("*                                                                *");
                     System.out.println("******************************************************************");
                     System.out.println("Por favor digita tu mejor opción:  ");
@@ -75,12 +76,31 @@ public class Main {
                             System.out.println("*******************************************************************");
                             System.out.println("*******               1. Explicación byte                **********");
                             System.out.println("*******************************************************************");
-                            System.out.println("un byte es un tipo de dato primitivo que representa un valor       ");
-                            System.out.println("numérico entero de 8 bits.Esto significa que puede almacenar       ");
-                            System.out.println("valores en el rango de -128 a 127.                                 ");
+                            System.out.println("*Un byte es un tipo de dato primitivo que representa un valor     *");
+                            System.out.println("*numérico entero de 8 bits.Esto significa que puede almacenar     *");
+                            System.out.println("*valores en el rango de -128 a 127.                               *");
+                            System.out.println("*******************************************************************");
                         break;
+                        case 2:
+                            System.out.println("*******************************************************************");
+                            System.out.println("*******               1. Explicación short                **********");
+                            System.out.println("*******************************************************************");
+                            System.out.println("*    *");
+                            System.out.println("*     *");
+                            System.out.println("*     *");
+                            System.out.println("*******************************************************************");
+                        break;
+                        case 3:
+                            System.out.println("*******************************************************************");
+                            System.out.println("*******               1. Explicación int                **********");
+                            System.out.println("*******************************************************************");
+                            System.out.println("*    *");
+                            System.out.println("*     *");
+                            System.out.println("*     *");
+                            System.out.println("*******************************************************************");
+                            break;
                         default:
-                            if (opc1 == 6){
+                            if (opc1 == 9){
 
                                 System.out.println("Si quieres volver al menú Principal presiona enter");
                                 scannerMainFirst.nextLine();
