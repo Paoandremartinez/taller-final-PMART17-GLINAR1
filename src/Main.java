@@ -520,7 +520,7 @@ public class Main {
                         case 8:
                             do{
                                 System.out.println("******************************************************************");
-                                System.out.println("*******             DO WHILE                *******");
+                                System.out.println("*******             DO WHILE                               *******");
                                 System.out.println("******************************************************************");
                                 System.out.println("******************************************************************");
                                 System.out.println("*                                                                *");
