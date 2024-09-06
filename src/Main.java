@@ -13,6 +13,7 @@ public class Main {
         int opc4 = 0; // variable utilizada en el menu de tipo operadores
         int opc5 = 0;
         int opc7 = 0; // variable utilizada en el menu de Ternaria
+        int opc8 = 0;
         int opc72 = 0; // variable utilizada en el menu de Ternaria - programa
         int num = 0; // variable usada en el programa de la ternaria
         int opc9 = 0; // variable utilizada en el menu de while
@@ -517,6 +518,42 @@ public class Main {
                             } while (opc7 != 3);
                             break;
                         case 8:
+                            do{
+                                System.out.println("******************************************************************");
+                                System.out.println("*******             DO WHILE                *******");
+                                System.out.println("******************************************************************");
+                                System.out.println("******************************************************************");
+                                System.out.println("*                                                                *");
+                                System.out.println("*  1. Explicación DO WHILE                                       *");
+                                System.out.println("*  2. Programa DO WHILE                                          *");
+                                System.out.println("*  3. Volver menú inicial                                        *");
+                                System.out.println("******************************************************************");
+                                System.out.println("Por favor digita tu mejor opción:  ");
+                                opc8 = scannerMainFirst.nextInt();
+
+                                switch (opc8){
+                                    case 1:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******         1. EXPLICACIÓN DO WHILE                 **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*un bucle do while es una estructura de control de flujo que     *");
+                                        System.out.println("*permite ejecutar un bloque de código repetidamente mientras se  *");
+                                        System.out.println("* cumple una condición. La característica distintiva del bucle   *");
+                                        System.out.println("*do while es que el bloque de código se ejecuta al menos         *");
+                                        System.out.println("*una vez antes de que se evalúe la condición.                    *");
+                                        System.out.println("******************************************************************");
+                                        break;
+                                    default:
+                                        System.out.println("Número no válido, por favor verifique");
+                                        if (opc5 == 4) {
+
+                                            System.out.println("Si quieres volver al menú Principal presiona enter");
+                                            scannerMainFirst.nextLine();
+                                            scannerMainFirst.nextLine();
+                                        }
+
+                                }
+                            }while (opc5 != 6);
                             break;
                         case 9:
                             do {
