@@ -302,7 +302,7 @@ public class Main {
                         }
                     }while (opc4 != 6);
                     break;
-                
+
                 case 5:
                     break;
                 case 6:
