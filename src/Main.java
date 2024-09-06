@@ -83,7 +83,7 @@ public class Main {
                         break;
                         case 2:
                             System.out.println("*******************************************************************");
-                            System.out.println("*******               1. Explicación short                *********");
+                            System.out.println("*******               2. Explicación short                *********");
                             System.out.println("*******************************************************************");
                             System.out.println("*short es uno de los tipos de datos primitivos que se utiliza para*");
                             System.out.println("*representar números enteros. Es una alternativa a int para cuando*");
@@ -92,7 +92,7 @@ public class Main {
                         break;
                         case 3:
                             System.out.println("*******************************************************************");
-                            System.out.println("*******               1. Explicación int                **********");
+                            System.out.println("*******               3. Explicación int                **********");
                             System.out.println("*******************************************************************");
                             System.out.println("*int es un tipo de dato primitivo que se utiliza para representar *");
                             System.out.println("*números enteros. Es uno de los ocho tipos de datos primitivos    *");
@@ -102,7 +102,7 @@ public class Main {
                             break;
                         case 4:
                             System.out.println("*******************************************************************");
-                            System.out.println("*******               1. Explicación long                **********");
+                            System.out.println("*******               4. Explicación long                **********");
                             System.out.println("*******************************************************************");
                             System.out.println("*long es un tipo de dato primitivo utilizado para representar     *");
                             System.out.println("*números enteros más grandes que los que puede manejar el tipo    *");
@@ -112,7 +112,7 @@ public class Main {
                             break;
                         case 5:
                             System.out.println("********************************************************************");
-                            System.out.println("*******               1. Explicación float                **********");
+                            System.out.println("*******               5. Explicación float                **********");
                             System.out.println("********************************************************************");
                             System.out.println("*float es un tipo de dato primitivo que se utiliza para            *");
                             System.out.println("*representar números en punto flotante de precisión simple.        *");
@@ -120,7 +120,7 @@ public class Main {
                             break;
                         case 6:
                             System.out.println("********************************************************************");
-                            System.out.println("*******               1. Explicación double                *********");
+                            System.out.println("*******               6. Explicación double                *********");
                             System.out.println("********************************************************************");
                             System.out.println("*double es un tipo de dato primitivo utilizado para representar    *");
                             System.out.println("*números en punto flotante de precisión doble. Esto significa que  *");
@@ -130,7 +130,7 @@ public class Main {
                             break;
                         case 7:
                             System.out.println("*******************************************************************");
-                            System.out.println("*******               1. Explicación char                **********");
+                            System.out.println("*******               7. Explicación char                **********");
                             System.out.println("*******************************************************************");
                             System.out.println("*char es un tipo de dato primitivo que se utiliza para representar*");
                             System.out.println("* un solo carácter. Los caracteres en Java están representados    *");
@@ -140,7 +140,7 @@ public class Main {
                             break;
                         case 8:
                             System.out.println("********************************************************************");
-                            System.out.println("*******               1. Explicación bolean                *********");
+                            System.out.println("*******               8. Explicación bolean                *********");
                             System.out.println("********************************************************************");
                             System.out.println("*boolean es un tipo de dato primitivo que se utiliza para          *");
                             System.out.println("*representar valores lógicos, es decir, valores que pueden ser     *");
