@@ -88,11 +88,7 @@ public class Main {
                         break;
                         case 2:
                             System.out.println("*******************************************************************");
-<<<<<<< HEAD
                             System.out.println("*******               2. Explicación short                *********");
-=======
-                            System.out.println("*******               1. Explicación short               **********");
->>>>>>> e702d04e6e5839236d82c0ecb23c46dead08b5e0
                             System.out.println("*******************************************************************");
                             System.out.println("*short es uno de los tipos de datos primitivos que se utiliza para*");
                             System.out.println("*representar números enteros. Es una alternativa a int para cuando*");
@@ -101,11 +97,7 @@ public class Main {
                         break;
                         case 3:
                             System.out.println("*******************************************************************");
-<<<<<<< HEAD
                             System.out.println("*******               3. Explicación int                **********");
-=======
-                            System.out.println("*******               1. Explicación int                 **********");
->>>>>>> e702d04e6e5839236d82c0ecb23c46dead08b5e0
                             System.out.println("*******************************************************************");
                             System.out.println("*int es un tipo de dato primitivo que se utiliza para representar *");
                             System.out.println("*números enteros. Es uno de los ocho tipos de datos primitivos    *");
