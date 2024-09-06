@@ -11,14 +11,15 @@ public class Main {
         int opcion = 0; // variable utilizada en el menu principal
         int opc1 = 0; // variable utilizada en el menu de datos primitivos
         int opc4 = 0; // variable utilizada en el menu de tipo operadores
+        int opc5 = 0;
         int opc7 = 0; // variable utilizada en el menu de Ternaria
-        int opc72= 0; // variable utilizada en el menu de Ternaria - programa
-        int num =0; // variable usada en el programa de la ternaria
+        int opc72 = 0; // variable utilizada en el menu de Ternaria - programa
+        int num = 0; // variable usada en el programa de la ternaria
         int opc9 = 0; // variable utilizada en el menu de while
-        int opc92= 0; // variable utilizada en el menu de while - programa
+        int opc92 = 0; // variable utilizada en el menu de while - programa
         int opc10 = 0; // variable utilizada en el menu de FOR
-        int opc102= 0; // variable utilizada en el menu de FOR - programa
-       // int num =0; // variable usada en el programa de la ternaria
+        int opc102 = 0; // variable utilizada en el menu de FOR - programa
+        // int num =0; // variable usada en el programa de la ternaria
         do {
             System.out.println("******************************************************");
             System.out.println("*******        TALLER PRE-HACKATON          **********");
@@ -42,8 +43,7 @@ public class Main {
             //el usuario ingresa la opcion
             System.out.println("Por favor digita tu mejor opción:  ");
 
-            while (!scannerMainFirst.hasNextInt())
-            {
+            while (!scannerMainFirst.hasNextInt()) {
                 System.out.println("Por favor digita una opción valida");
                 scannerMainFirst.next();
                 System.out.println("Ingresa la opción");
@@ -52,119 +52,118 @@ public class Main {
 
             ///se ingresa al menú seleccionado por el usuario
 
-            switch (opcion)
-            {
+            switch (opcion) {
                 case 1:
-                do {
-                    System.out.println("******************************************************************");
-                    System.out.println("*******              1. DATOS PRIMITIVOS                   *******");
-                    System.out.println("******************************************************************");
-                    System.out.println("******************************************************************");
-                    System.out.println("*     1. Explicación byte.                                       *");
-                    System.out.println("*     2. Explicación short                                      *");
-                    System.out.println("*     3. Explicación int                                         *");
-                    System.out.println("*     4. Explicación long                                        *");
-                    System.out.println("*     5. Explicación float                                       *");
-                    System.out.println("*     6. Explicación double                                      *");
-                    System.out.println("*     7. Explicación char                                        *");
-                    System.out.println("*     8. Explicación bolean                                      *");
-                    System.out.println("*     9. Volver al menu principal                                *");
-                    System.out.println("*                                                                *");
-                    System.out.println("******************************************************************");
-                    System.out.println("Por favor digita tu mejor opción:  ");
+                    do {
+                        System.out.println("******************************************************************");
+                        System.out.println("*******              1. DATOS PRIMITIVOS                   *******");
+                        System.out.println("******************************************************************");
+                        System.out.println("******************************************************************");
+                        System.out.println("*     1. Explicación byte.                                       *");
+                        System.out.println("*     2. Explicación short                                      *");
+                        System.out.println("*     3. Explicación int                                         *");
+                        System.out.println("*     4. Explicación long                                        *");
+                        System.out.println("*     5. Explicación float                                       *");
+                        System.out.println("*     6. Explicación double                                      *");
+                        System.out.println("*     7. Explicación char                                        *");
+                        System.out.println("*     8. Explicación bolean                                      *");
+                        System.out.println("*     9. Volver al menu principal                                *");
+                        System.out.println("*                                                                *");
+                        System.out.println("******************************************************************");
+                        System.out.println("Por favor digita tu mejor opción:  ");
 
-                    opc1 = scannerMainFirst.nextInt();
+                        opc1 = scannerMainFirst.nextInt();
 
-                    switch (opc1){
+                        switch (opc1) {
 
-                        case 1:
-                            System.out.println("*******************************************************************");
-                            System.out.println("*******               1. Explicación byte                **********");
-                            System.out.println("*******************************************************************");
-                            System.out.println("*Un byte es un tipo de dato primitivo que representa un valor     *");
-                            System.out.println("*numérico entero de 8 bits.Esto significa que puede almacenar     *");
-                            System.out.println("*valores en el rango de -128 a 127.                               *");
-                            System.out.println("*******************************************************************");
-                        break;
-                        case 2:
-                            System.out.println("*******************************************************************");
-                            System.out.println("*******               2. Explicación short                *********");
-                            System.out.println("*******************************************************************");
-                            System.out.println("*short es uno de los tipos de datos primitivos que se utiliza para*");
-                            System.out.println("*representar números enteros. Es una alternativa a int para cuando*");
-                            System.out.println("* necesitas almacenar valores enteros en un rango más pequeño.    *");
-                            System.out.println("*******************************************************************");
-                        break;
-                        case 3:
-                            System.out.println("*******************************************************************");
-                            System.out.println("*******               3. Explicación int                **********");
-                            System.out.println("*******************************************************************");
-                            System.out.println("*int es un tipo de dato primitivo que se utiliza para representar *");
-                            System.out.println("*números enteros. Es uno de los ocho tipos de datos primitivos    *");
-                            System.out.println("*en Java y es conocido por su eficiencia y rapidez en la          *");
-                            System.out.println("manipulación de datos.                                            *");
-                            System.out.println("*******************************************************************");
-                            break;
-                        case 4:
-                            System.out.println("*******************************************************************");
-                            System.out.println("*******               4. Explicación long                **********");
-                            System.out.println("*******************************************************************");
-                            System.out.println("*long es un tipo de dato primitivo utilizado para representar     *");
-                            System.out.println("*números enteros más grandes que los que puede manejar el tipo    *");
-                            System.out.println("*int. Es útil cuando necesitas trabajar con valores enteros que   *");
-                            System.out.println(" exceden el rango de un int.                                      *");
-                            System.out.println("*******************************************************************");
-                            break;
-                        case 5:
-                            System.out.println("********************************************************************");
-                            System.out.println("*******               5. Explicación float                **********");
-                            System.out.println("********************************************************************");
-                            System.out.println("*float es un tipo de dato primitivo que se utiliza para            *");
-                            System.out.println("*representar números en punto flotante de precisión simple.        *");
-                            System.out.println("********************************************************************");
-                            break;
-                        case 6:
-                            System.out.println("********************************************************************");
-                            System.out.println("*******               6. Explicación double                *********");
-                            System.out.println("********************************************************************");
-                            System.out.println("*double es un tipo de dato primitivo utilizado para representar    *");
-                            System.out.println("*números en punto flotante de precisión doble. Esto significa que  *");
-                            System.out.println("* puede almacenar números con decimales y ofrece mayor precisión   *");
-                            System.out.println("que el tipo float.                                                 *");
-                            System.out.println("********************************************************************");
-                            break;
-                        case 7:
-                            System.out.println("*******************************************************************");
-                            System.out.println("*******               7. Explicación char                **********");
-                            System.out.println("*******************************************************************");
-                            System.out.println("*char es un tipo de dato primitivo que se utiliza para representar*");
-                            System.out.println("* un solo carácter. Los caracteres en Java están representados    *");
-                            System.out.println("*mediante el código Unicode, lo que permite que el tipo char      *");
-                            System.out.println(" maneje caracteres de una amplia gama de idiomas y símbolos.      *");
-                            System.out.println("*******************************************************************");
-                            break;
-                        case 8:
-                            System.out.println("********************************************************************");
-                            System.out.println("*******               8. Explicación bolean                *********");
-                            System.out.println("********************************************************************");
-                            System.out.println("*boolean es un tipo de dato primitivo que se utiliza para          *");
-                            System.out.println("*representar valores lógicos, es decir, valores que pueden ser     *");
-                            System.out.println("*solo uno de dos posibles: true (verdadero) o false (falso).       *");
-                            System.out.println("*******************************************************************");
-                            break;
-                        default:
-                            System.out.println("Número no válido, por favor verifique");
-                            if (opc1 == 9){
+                            case 1:
+                                System.out.println("*******************************************************************");
+                                System.out.println("*******               1. Explicación byte                **********");
+                                System.out.println("*******************************************************************");
+                                System.out.println("*Un byte es un tipo de dato primitivo que representa un valor     *");
+                                System.out.println("*numérico entero de 8 bits.Esto significa que puede almacenar     *");
+                                System.out.println("*valores en el rango de -128 a 127.                               *");
+                                System.out.println("*******************************************************************");
+                                break;
+                            case 2:
+                                System.out.println("*******************************************************************");
+                                System.out.println("*******               2. Explicación short                *********");
+                                System.out.println("*******************************************************************");
+                                System.out.println("*short es uno de los tipos de datos primitivos que se utiliza para*");
+                                System.out.println("*representar números enteros. Es una alternativa a int para cuando*");
+                                System.out.println("* necesitas almacenar valores enteros en un rango más pequeño.    *");
+                                System.out.println("*******************************************************************");
+                                break;
+                            case 3:
+                                System.out.println("*******************************************************************");
+                                System.out.println("*******               3. Explicación int                **********");
+                                System.out.println("*******************************************************************");
+                                System.out.println("*int es un tipo de dato primitivo que se utiliza para representar *");
+                                System.out.println("*números enteros. Es uno de los ocho tipos de datos primitivos    *");
+                                System.out.println("*en Java y es conocido por su eficiencia y rapidez en la          *");
+                                System.out.println("manipulación de datos.                                            *");
+                                System.out.println("*******************************************************************");
+                                break;
+                            case 4:
+                                System.out.println("*******************************************************************");
+                                System.out.println("*******               4. Explicación long                **********");
+                                System.out.println("*******************************************************************");
+                                System.out.println("*long es un tipo de dato primitivo utilizado para representar     *");
+                                System.out.println("*números enteros más grandes que los que puede manejar el tipo    *");
+                                System.out.println("*int. Es útil cuando necesitas trabajar con valores enteros que   *");
+                                System.out.println(" exceden el rango de un int.                                      *");
+                                System.out.println("*******************************************************************");
+                                break;
+                            case 5:
+                                System.out.println("********************************************************************");
+                                System.out.println("*******               5. Explicación float                **********");
+                                System.out.println("********************************************************************");
+                                System.out.println("*float es un tipo de dato primitivo que se utiliza para            *");
+                                System.out.println("*representar números en punto flotante de precisión simple.        *");
+                                System.out.println("********************************************************************");
+                                break;
+                            case 6:
+                                System.out.println("********************************************************************");
+                                System.out.println("*******               6. Explicación double                *********");
+                                System.out.println("********************************************************************");
+                                System.out.println("*double es un tipo de dato primitivo utilizado para representar    *");
+                                System.out.println("*números en punto flotante de precisión doble. Esto significa que  *");
+                                System.out.println("* puede almacenar números con decimales y ofrece mayor precisión   *");
+                                System.out.println("que el tipo float.                                                 *");
+                                System.out.println("********************************************************************");
+                                break;
+                            case 7:
+                                System.out.println("*******************************************************************");
+                                System.out.println("*******               7. Explicación char                **********");
+                                System.out.println("*******************************************************************");
+                                System.out.println("*char es un tipo de dato primitivo que se utiliza para representar*");
+                                System.out.println("* un solo carácter. Los caracteres en Java están representados    *");
+                                System.out.println("*mediante el código Unicode, lo que permite que el tipo char      *");
+                                System.out.println(" maneje caracteres de una amplia gama de idiomas y símbolos.      *");
+                                System.out.println("*******************************************************************");
+                                break;
+                            case 8:
+                                System.out.println("********************************************************************");
+                                System.out.println("*******               8. Explicación bolean                *********");
+                                System.out.println("********************************************************************");
+                                System.out.println("*boolean es un tipo de dato primitivo que se utiliza para          *");
+                                System.out.println("*representar valores lógicos, es decir, valores que pueden ser     *");
+                                System.out.println("*solo uno de dos posibles: true (verdadero) o false (falso).       *");
+                                System.out.println("*******************************************************************");
+                                break;
+                            default:
+                                System.out.println("Número no válido, por favor verifique");
+                                if (opc1 == 9) {
 
-                                System.out.println("Si quieres volver al menú Principal presiona enter");
-                                scannerMainFirst.nextLine();
-                                scannerMainFirst.nextLine();
-                          }
+                                    System.out.println("Si quieres volver al menú Principal presiona enter");
+                                    scannerMainFirst.nextLine();
+                                    scannerMainFirst.nextLine();
+                                }
+                        }
+
                     }
-
-                }
-                while (opc1 != 6);
-                break;
+                    while (opc1 != 6);
+                    break;
                 case 2:
                     System.out.println("******************************************************************");
                     System.out.println("*******                  2. STRING                      **********");
@@ -348,253 +347,343 @@ public class Main {
 
                                 }
                         }
-                    }while (opc4 != 6);
+                    } while (opc4 != 6);
                     break;
-                
+
                 case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
                     do {
-                        System.out.println("******************************************************************");
-                        System.out.println("*******             7. TERNARIA                            *******");
-                        System.out.println("******************************************************************");
-                        System.out.println("******************************************************************");
-                        System.out.println("*                                                                *");
-                        System.out.println("*  1. Explicación de Ternaria                                    *");
-                        System.out.println("*  2. Programa de Ternaria                                       *");
-                        System.out.println("*  3. Volver menú inicial                                        *");
-                        System.out.println("*                                                                *");
-                        System.out.println("******************************************************************");
-                        System.out.println("Por favor digita tu mejor opción:  ");
-                        opc7 = scannerMainFirst.nextInt();
+                        System.out.println("*********************************************************************");
+                        System.out.println("*******            IF, ELSE IF, ELSE                         ********");
+                        System.out.println("*********************************************************************");
+                        System.out.println("*********************************************************************");
+                        System.out.println("*                                                                   *");
+                        System.out.println("*  1. Explicación IF                                                *");
+                        System.out.println("*  2. Explicación ELSE IF                                           *");
+                        System.out.println("*  3. Explicación ELSE                                              *");
+                        System.out.println("*  4. Programa                                                      *");
+                        System.out.println("*  5. Volver al menu principal                                      *");
+                        System.out.println("Por favor digita tu mejor opción:                                   *");
+                        opc5 = scannerMainFirst.nextInt();
 
-                        switch (opc7)
-                        {
+                        switch (opc5) {
                             case 1:
                                 System.out.println("******************************************************************");
-                                System.out.println("*******         1. EXPLICACIÓN TERNARIA                 **********");
+                                System.out.println("*******         1. Explicación IF                      ***********");
                                 System.out.println("******************************************************************");
-                                System.out.println("* El operador ternario en Java es una construcción que permite   *");
-                                System.out.println("* tomar decisiones basadas en una condición booleana de manera   *");
-                                System.out.println("* concisa en una sola línea de código                            *");
-                                System.out.println("*                                                                *");
-                                System.out.println("*     String respuesta = (num % 2 == 0) ? \"Par\" : \"Impar\";   *");
+                                System.out.println("*if es una estructura de control de flujo que permite ejecutar   *");
+                                System.out.println("*un bloque de código solo si se cumple una condición específica  *");
+                                System.out.println("*Es fundamental para tomar decisiones en la pr                   *");
+                                System.out.println("* permitiendo que tu programa realice diferentes acciones en     *");
+                                System.out.println("*función de si una condición es verdadera o falsa.               *");
                                 System.out.println("******************************************************************");
                                 break;
                             case 2:
-                                System.out.println("******************************************************************");
-                                System.out.println("*******           2. PROGRAMA TERNARIA                  **********");
-                                System.out.println("******************************************************************");
-                                System.out.println("*                                                                *");
-                                System.out.println("* ¿Quieres saber si tu número es par o impar?                    *");
-                                System.out.println("*  1. Si                                                         *");
-                                System.out.println("*  2. No                                                         *");
-                                System.out.println("*  Ingresa la opción :                                           *");
-                                System.out.println("******************************************************************");
-                                opc72 = scannerMainFirst.nextInt();
-
-                                switch (opc72)
-                                {
-                                    case 1:
-                                        System.out.println("Ingresa el número ");
-                                        num = scannerMainFirst.nextInt();
-                                        String respuesta = (num % 2 == 0) ? "Par" : "Impar";
-                                        System.out.println("El número es " + respuesta);
-                                        break;
-                                    case 2:
-                                        System.out.println("Vuelve después..... ");
-                                        break;
-                                    default:
-                                        System.out.println("Número no válido, por favor verifique");
-                                }
-
+                                System.out.println("*******************************************************************");
+                                System.out.println("*******         1. Explicación ELSE IF                  ***********");
+                                System.out.println("*******************************************************************");
+                                System.out.println("*else if es una extensión de la estructura de control if que      *");
+                                System.out.println("*permite manejar múltiples condiciones de manera secuencial.      *");
+                                System.out.println("* Es útil cuando necesitas evaluar varias condiciones distintas   *");
+                                System.out.println("* y ejecutar diferentes bloques de código en función de cuál      *");
+                                System.out.println("*condición se cumple.                                             *");
+                                System.out.println("*******************************************************************");
                                 break;
-                            default:
-                                System.out.println("Número no válido, por favor verifique");
-                                if
-                                (opc72 == 3) {
-                                    System.out.println("Si quieres volver al menú Principal presiona enter");
-                                    scannerMainFirst.nextLine();
-                                    scannerMainFirst.nextLine();
 
-                                }
-                        }
-                    }while (opc7 != 3);
-                    break;
-                case 8:
-                    break;
-                case 9:
-                    do {
-                        System.out.println("******************************************************************");
-                        System.out.println("*******              9. BUCLE WHILE                        *******");
-                        System.out.println("******************************************************************");
-                        System.out.println("******************************************************************");
-                        System.out.println("*                                                                *");
-                        System.out.println("*  1. Explicación de WHILE                                       *");
-                        System.out.println("*  2. Programa de While                                          *");
-                        System.out.println("*  3. Volver menú inicial                                        *");
-                        System.out.println("*                                                                *");
-                        System.out.println("******************************************************************");
-                        System.out.println("Por favor digita tu mejor opción:  ");
-                        opc9 = scannerMainFirst.nextInt();
-
-                        switch (opc9)
-                        {
-                            case 1:
-                                System.out.println("******************************************************************");
-                                System.out.println("*******         1. EXPLICACIÓN WHILE                    **********");
-                                System.out.println("******************************************************************");
-                                System.out.println("* Como su nombre indica (while significa mientras), repetir una  *");
-                                System.out.println("* acción en un bucle siempre y cuando se cumpla una condición    *");
-                                System.out.println("* booleana de control.                                           *");
-                                System.out.println("*                                                                *");
-                                System.out.println("*     while (condición) {// bloque de codigo que se repite       *");
-                                System.out.println("*     mientras la condición sea verdadera }                      *");
-                                System.out.println("*                                                                *");
-                                System.out.println("******************************************************************");
+                            case 3:
+                                System.out.println("********************************************************************");
+                                System.out.println("*******         3. Explicación ELSE                     ************");
+                                System.out.println("********************************************************************");
+                                System.out.println("*else es una estructura de control que se utiliza junto con if     *");
+                                System.out.println("*para manejar el caso en el que la condición del if no se cumple   *");
+                                System.out.println("* Es una forma de proporcionar una alternativa o una acción a      *");
+                                System.out.println("* realizar cuando la condición evaluada en el if resulta ser false.*");
+                                System.out.println("********************************************************************");
                                 break;
-                            case 2:
-                                System.out.println("******************************************************************");
-                                System.out.println("*******           2. PROGRAMA WHILE                     **********");
-                                System.out.println("******************************************************************");
-                                System.out.println("*                                                                *");
-                                System.out.println("* ¿Quieres saber cuanto es la sumatoria desde el número 1 hasta  *");
-                                System.out.println("*  hasta llegar al número ingresado?                             *");
-                                System.out.println("*  1. Si                                                         *");
-                                System.out.println("*  2. No                                                         *");
-                                System.out.println("*  Ingresa la opción :                                           *");
-                                System.out.println("******************************************************************");
-                                opc92 = scannerMainFirst.nextInt();
+                            case 4:
+                                Scanner pruebascanner = new Scanner(System.in);
+                                System.out.println("LEER VALORES EN LAS VARIABLES A,B,C\n");
+                                System.out.println("Por favor ingrese el valor de la variable 'A' ");
+                                int a = pruebascanner.nextInt();
+                                System.out.println("Por favor ingrese el valor de la variable 'B' ");
+                                int b = pruebascanner.nextInt();
+                                System.out.println("Por favor ingrese el valor de la variable 'C' ");
+                                int c = pruebascanner.nextInt();
 
-                                switch (opc92) {
-                                    case 1:
-                                        Scanner dato = new Scanner(System.in);
-                                        System.out.println("Ingresa el número a sumar ");
-                                        int ing = dato.nextInt();
-                                        int num9 = 1;
-                                        int contador = 0;
+                                if (a == b && a == c && b == c) {
+                                    System.out.println("Los valores ingresados son iguales");
+                                } else if (a > b && a > c) {
+                                    System.out.println("El valor de A es mayor");
+                                    if (b < c) {
+                                        System.out.println("El valor de B es menor");
+                                    } else {
+                                        System.out.println("El valor de C es menor");
+                                    }
+                                } else if (b > a && b > c) {
+                                    System.out.println("El valor de B es mayor");
+                                    if (a > c) {
+                                        System.out.println("El valor de A es menor");
 
-                                        while (num9 <= ing) {
-                                            System.out.println("Incremento del numero                    + " + num9);
-                                            contador = contador + num9;
-                                            num9++;
-                                        }
-                                        System.out.println("_____________________________________________");
-                                        System.out.println("La sumatoria de los números del 1 al " + ing + " es " + contador);
-                                        break;
-                                    case 2:
-                                        System.out.println("Vuelve después..... ");
-                                        break;
-                                    default:
-                                        System.out.println("Número no válido, por favor verifique");
+                                    } else {
+                                        System.out.println("El valor de C es menor");
+                                    }
+                                } else {
+                                    System.out.println("El valor de C es mayor");
+                                    if (b < a) {
+                                        System.out.println("El valor de B es menor");
+                                    } else {
+                                        System.out.println("el valor de A es menor");
+                                    }
+
                                 }
                                 break;
                             default:
                                 System.out.println("Número no válido, por favor verifique");
-                                if
-                                (opc92 == 3) {
+                                if (opc5 == 5) {
+
                                     System.out.println("Si quieres volver al menú Principal presiona enter");
                                     scannerMainFirst.nextLine();
                                     scannerMainFirst.nextLine();
-
                                 }
                         }
-                    }while (opc9 != 3);
+                    }while (opc5 != 6);
                     break;
 
-                case 10:
-                    do {
-                        System.out.println("******************************************************************");
-                        System.out.println("*******             10. BUCLE FOR                          *******");
-                        System.out.println("******************************************************************");
-                        System.out.println("******************************************************************");
-                        System.out.println("*                                                                *");
-                        System.out.println("*  1. Explicación de FOR                                         *");
-                        System.out.println("*  2. Programa de For                                            *");
-                        System.out.println("*  3. Volver menú inicial                                        *");
-                        System.out.println("*                                                                *");
-                        System.out.println("******************************************************************");
-                        System.out.println("Por favor digita tu mejor opción:  ");
-                        opc10 = scannerMainFirst.nextInt();
+                        case 6:
+                            break;
+                        case 7:
+                            do {
+                                System.out.println("******************************************************************");
+                                System.out.println("*******             7. TERNARIA                            *******");
+                                System.out.println("******************************************************************");
+                                System.out.println("******************************************************************");
+                                System.out.println("*                                                                *");
+                                System.out.println("*  1. Explicación de Ternaria                                    *");
+                                System.out.println("*  2. Programa de Ternaria                                       *");
+                                System.out.println("*  3. Volver menú inicial                                        *");
+                                System.out.println("*                                                                *");
+                                System.out.println("******************************************************************");
+                                System.out.println("Por favor digita tu mejor opción:  ");
+                                opc7 = scannerMainFirst.nextInt();
 
-                        switch (opc10)
-                        {
-                            case 1:
-                                System.out.println("******************************************************************");
-                                System.out.println("*******         1. EXPLICACIÓN FOR                      **********");
-                                System.out.println("******************************************************************");
-                                System.out.println("* La sentencia “for” en Java es una estructura de control de     *");
-                                System.out.println("* ciclo que se utiliza para ejecutar un bloque de código una     *");
-                                System.out.println("* cantidad determinada de veces.                                 *");
-                                System.out.println("*                                                                *");
-                                System.out.println("*     for (inicialización;condición;expresion_de_interacción) {  *");
-                                System.out.println("*     bloque de código que se ejecuta en cada interacción}       *");
-                                System.out.println("*                                                                *");
-                                System.out.println("******************************************************************");
-                                break;
-                            case 2:
-                                System.out.println("******************************************************************");
-                                System.out.println("*******           2. PROGRAMA FOR                       **********");
-                                System.out.println("******************************************************************");
-                                System.out.println("*                                                                *");
-                                System.out.println("* ¿Quieres saber cuanto es la sumatoria desde el número 1 hasta  *");
-                                System.out.println("*  hasta llegar al número ingresado?                             *");
-                                System.out.println("*  1. Si                                                         *");
-                                System.out.println("*  2. No                                                         *");
-                                System.out.println("*  Ingresa la opción :                                           *");
-                                System.out.println("******************************************************************");
-                                opc102 = scannerMainFirst.nextInt();
-
-                                switch (opc102) {
+                                switch (opc7) {
                                     case 1:
-                                        Scanner ingfor = new Scanner(System.in);
-                                        System.out.println("Ingresa el número a sumar");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******         1. EXPLICACIÓN TERNARIA                 **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("* El operador ternario en Java es una construcción que permite   *");
+                                        System.out.println("* tomar decisiones basadas en una condición booleana de manera   *");
+                                        System.out.println("* concisa en una sola línea de código                            *");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("*     String respuesta = (num % 2 == 0) ? \"Par\" : \"Impar\";   *");
+                                        System.out.println("******************************************************************");
+                                        break;
+                                    case 2:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******           2. PROGRAMA TERNARIA                  **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("* ¿Quieres saber si tu número es par o impar?                    *");
+                                        System.out.println("*  1. Si                                                         *");
+                                        System.out.println("*  2. No                                                         *");
+                                        System.out.println("*  Ingresa la opción :                                           *");
+                                        System.out.println("******************************************************************");
+                                        opc72 = scannerMainFirst.nextInt();
 
-                                        int sumfor = ingfor.nextInt();
-                                        int num10=1;
-                                        int contador2=0;
-
-                                        for (num10=1;num10<=sumfor;num10++)
-
-                                        {
-                                            System.out.println("Incremento del numero " + num10);
-                                            contador2=contador2 + num10;
-
+                                        switch (opc72) {
+                                            case 1:
+                                                System.out.println("Ingresa el número ");
+                                                num = scannerMainFirst.nextInt();
+                                                String respuesta = (num % 2 == 0) ? "Par" : "Impar";
+                                                System.out.println("El número es " + respuesta);
+                                                break;
+                                            case 2:
+                                                System.out.println("Vuelve después..... ");
+                                                break;
+                                            default:
+                                                System.out.println("Número no válido, por favor verifique");
                                         }
 
-                                        System.out.println("La sumatoria de los números del 1 al " + sumfor + " es "+ contador2);
-                                        break;
-                                    case 2:
-                                        System.out.println("Vuelve después..... ");
                                         break;
                                     default:
                                         System.out.println("Número no válido, por favor verifique");
-                                }
-                                break;
-                            default:
-                                System.out.println("Número no válido, por favor verifique");
-                                if
-                                (opc102 == 3) {
-                                    System.out.println("Si quieres volver al menú Principal presiona enter");
-                                    scannerMainFirst.nextLine();
-                                    scannerMainFirst.nextLine();
+                                        if
+                                        (opc72 == 3) {
+                                            System.out.println("Si quieres volver al menú Principal presiona enter");
+                                            scannerMainFirst.nextLine();
+                                            scannerMainFirst.nextLine();
 
+                                        }
                                 }
-                        }
-                    }while (opc10 != 3);
-                    break;
-                case 0:
-                    System.out.println("Hasta pronto............");
-                    System.exit(0);
-                    break;
-                default:
-                    System.out.println("Opción no valida ");
-            } //break;
+                            } while (opc7 != 3);
+                            break;
+                        case 8:
+                            break;
+                        case 9:
+                            do {
+                                System.out.println("******************************************************************");
+                                System.out.println("*******              9. BUCLE WHILE                        *******");
+                                System.out.println("******************************************************************");
+                                System.out.println("******************************************************************");
+                                System.out.println("*                                                                *");
+                                System.out.println("*  1. Explicación de WHILE                                       *");
+                                System.out.println("*  2. Programa de While                                          *");
+                                System.out.println("*  3. Volver menú inicial                                        *");
+                                System.out.println("*                                                                *");
+                                System.out.println("******************************************************************");
+                                System.out.println("Por favor digita tu mejor opción:  ");
+                                opc9 = scannerMainFirst.nextInt();
 
+                                switch (opc9) {
+                                    case 1:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******         1. EXPLICACIÓN WHILE                    **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("* Como su nombre indica (while significa mientras), repetir una  *");
+                                        System.out.println("* acción en un bucle siempre y cuando se cumpla una condición    *");
+                                        System.out.println("* booleana de control.                                           *");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("*     while (condición) {// bloque de codigo que se repite       *");
+                                        System.out.println("*     mientras la condición sea verdadera }                      *");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("******************************************************************");
+                                        break;
+                                    case 2:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******           2. PROGRAMA WHILE                     **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("* ¿Quieres saber cuanto es la sumatoria desde el número 1 hasta  *");
+                                        System.out.println("*  hasta llegar al número ingresado?                             *");
+                                        System.out.println("*  1. Si                                                         *");
+                                        System.out.println("*  2. No                                                         *");
+                                        System.out.println("*  Ingresa la opción :                                           *");
+                                        System.out.println("******************************************************************");
+                                        opc92 = scannerMainFirst.nextInt();
+
+                                        switch (opc92) {
+                                            case 1:
+                                                Scanner dato = new Scanner(System.in);
+                                                System.out.println("Ingresa el número a sumar ");
+                                                int ing = dato.nextInt();
+                                                int num9 = 1;
+                                                int contador = 0;
+
+                                                while (num9 <= ing) {
+                                                    System.out.println("Incremento del numero                    + " + num9);
+                                                    contador = contador + num9;
+                                                    num9++;
+                                                }
+                                                System.out.println("_____________________________________________");
+                                                System.out.println("La sumatoria de los números del 1 al " + ing + " es " + contador);
+                                                break;
+                                            case 2:
+                                                System.out.println("Vuelve después..... ");
+                                                break;
+                                            default:
+                                                System.out.println("Número no válido, por favor verifique");
+                                        }
+                                        break;
+                                    default:
+                                        System.out.println("Número no válido, por favor verifique");
+                                        if
+                                        (opc92 == 3) {
+                                            System.out.println("Si quieres volver al menú Principal presiona enter");
+                                            scannerMainFirst.nextLine();
+                                            scannerMainFirst.nextLine();
+
+                                        }
+                                }
+                            } while (opc9 != 3);
+                            break;
+
+                        case 10:
+                            do {
+                                System.out.println("******************************************************************");
+                                System.out.println("*******             10. BUCLE FOR                          *******");
+                                System.out.println("******************************************************************");
+                                System.out.println("******************************************************************");
+                                System.out.println("*                                                                *");
+                                System.out.println("*  1. Explicación de FOR                                         *");
+                                System.out.println("*  2. Programa de For                                            *");
+                                System.out.println("*  3. Volver menú inicial                                        *");
+                                System.out.println("*                                                                *");
+                                System.out.println("******************************************************************");
+                                System.out.println("Por favor digita tu mejor opción:  ");
+                                opc10 = scannerMainFirst.nextInt();
+
+                                switch (opc10) {
+                                    case 1:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******         1. EXPLICACIÓN FOR                      **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("* La sentencia “for” en Java es una estructura de control de     *");
+                                        System.out.println("* ciclo que se utiliza para ejecutar un bloque de código una     *");
+                                        System.out.println("* cantidad determinada de veces.                                 *");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("*     for (inicialización;condición;expresion_de_interacción) {  *");
+                                        System.out.println("*     bloque de código que se ejecuta en cada interacción}       *");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("******************************************************************");
+                                        break;
+                                    case 2:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******           2. PROGRAMA FOR                       **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("* ¿Quieres saber cuanto es la sumatoria desde el número 1 hasta  *");
+                                        System.out.println("*  hasta llegar al número ingresado?                             *");
+                                        System.out.println("*  1. Si                                                         *");
+                                        System.out.println("*  2. No                                                         *");
+                                        System.out.println("*  Ingresa la opción :                                           *");
+                                        System.out.println("******************************************************************");
+                                        opc102 = scannerMainFirst.nextInt();
+
+                                        switch (opc102) {
+                                            case 1:
+                                                Scanner ingfor = new Scanner(System.in);
+                                                System.out.println("Ingresa el número a sumar");
+
+                                                int sumfor = ingfor.nextInt();
+                                                int num10 = 1;
+                                                int contador2 = 0;
+
+                                                for (num10 = 1; num10 <= sumfor; num10++) {
+                                                    System.out.println("Incremento del numero " + num10);
+                                                    contador2 = contador2 + num10;
+
+                                                }
+
+                                                System.out.println("La sumatoria de los números del 1 al " + sumfor + " es " + contador2);
+                                                break;
+                                            case 2:
+                                                System.out.println("Vuelve después..... ");
+                                                break;
+                                            default:
+                                                System.out.println("Número no válido, por favor verifique");
+                                        }
+                                        break;
+                                    default:
+                                        System.out.println("Número no válido, por favor verifique");
+                                        if
+                                        (opc102 == 3) {
+                                            System.out.println("Si quieres volver al menú Principal presiona enter");
+                                            scannerMainFirst.nextLine();
+                                            scannerMainFirst.nextLine();
+
+                                        }
+                                }
+                            } while (opc10 != 3);
+                            break;
+                        case 0:
+                            System.out.println("Hasta pronto............");
+                            System.exit(0);
+                            break;
+                        default:
+                            System.out.println("Opción no valida ");
+                    } //break;
+
+            }
+            while (opcion != 3) ;
+            scannerMainFirst.close();
         }
-        while (opcion!=3);
-        scannerMainFirst.close();
     }
-}
