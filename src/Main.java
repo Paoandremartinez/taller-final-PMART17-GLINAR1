@@ -12,6 +12,8 @@ public class Main {
         int opc1 = 0; // variable utilizada en el menu de datos primitivos
         int opc4 = 0; // variable utilizada en el menu de tipo operadores
         int opc5 = 0;
+        int opc6 = 0; // variable utilizada en el menu de switch
+        int nota = 0;
         int opc7 = 0; // variable utilizada en el menu de Ternaria
         int opc72 = 0; // variable utilizada en el menu de Ternaria - programa
         int num = 0; // variable usada en el programa de la ternaria
@@ -362,24 +364,28 @@ public class Main {
                         System.out.println("*  3. Explicación ELSE                                              *");
                         System.out.println("*  4. Programa                                                      *");
                         System.out.println("*  5. Volver al menu principal                                      *");
-                        System.out.println("Por favor digita tu mejor opción:                                   *");
+                        System.out.println("*                                                                   *");
+                        System.out.println("*********************************************************************");
+                        System.out.println("Por favor digita tu mejor opción:                                   ");
                         opc5 = scannerMainFirst.nextInt();
 
                         switch (opc5) {
                             case 1:
                                 System.out.println("******************************************************************");
-                                System.out.println("*******         1. Explicación IF                      ***********");
+                                System.out.println("*******         1. EXPLICACIÓN  IF                     ***********");
                                 System.out.println("******************************************************************");
-                                System.out.println("*if es una estructura de control de flujo que permite ejecutar   *");
-                                System.out.println("*un bloque de código solo si se cumple una condición específica  *");
-                                System.out.println("*Es fundamental para tomar decisiones en la pr                   *");
+                                System.out.println("*                                                                *");
+                                System.out.println("* IF es una estructura de control de flujo que permite ejecutar  *");
+                                System.out.println("* un bloque de código solo si se cumple una condición específica *");
+                                System.out.println("* Es fundamental para tomar decisiones en la pr                  *");
                                 System.out.println("* permitiendo que tu programa realice diferentes acciones en     *");
-                                System.out.println("*función de si una condición es verdadera o falsa.               *");
+                                System.out.println("* función de si una condición es verdadera o falsa.              *");
+                                System.out.println("*                                                                *");
                                 System.out.println("******************************************************************");
                                 break;
                             case 2:
                                 System.out.println("*******************************************************************");
-                                System.out.println("*******         1. Explicación ELSE IF                  ***********");
+                                System.out.println("*******         2. EXPLICACIÓN ELSE IF                  ***********");
                                 System.out.println("*******************************************************************");
                                 System.out.println("*else if es una extensión de la estructura de control if que      *");
                                 System.out.println("*permite manejar múltiples condiciones de manera secuencial.      *");
@@ -400,41 +406,58 @@ public class Main {
                                 System.out.println("********************************************************************");
                                 break;
                             case 4:
-                                Scanner pruebascanner = new Scanner(System.in);
-                                System.out.println("LEER VALORES EN LAS VARIABLES A,B,C\n");
-                                System.out.println("Por favor ingrese el valor de la variable 'A' ");
-                                int a = pruebascanner.nextInt();
-                                System.out.println("Por favor ingrese el valor de la variable 'B' ");
-                                int b = pruebascanner.nextInt();
-                                System.out.println("Por favor ingrese el valor de la variable 'C' ");
-                                int c = pruebascanner.nextInt();
+                                System.out.println("********************************************************************");
+                                System.out.println("*******         4. PROGRAMA IF, ELSE, ELSE IF           ************");
+                                System.out.println("********************************************************************");
 
-                                if (a == b && a == c && b == c) {
-                                    System.out.println("Los valores ingresados son iguales");
-                                } else if (a > b && a > c) {
-                                    System.out.println("El valor de A es mayor");
-                                    if (b < c) {
-                                        System.out.println("El valor de B es menor");
-                                    } else {
-                                        System.out.println("El valor de C es menor");
-                                    }
-                                } else if (b > a && b > c) {
-                                    System.out.println("El valor de B es mayor");
-                                    if (a > c) {
-                                        System.out.println("El valor de A es menor");
+                                Scanner scanner = new Scanner(System.in);
+                                System.out.println("Ingresa el valor de A");
+                                int a = scanner.nextInt();
+                                System.out.println("Ingresa el valor de B");
+                                int b = scanner.nextInt();
+                                System.out.println("Ingresa el valor de C");
+                                int c = scanner.nextInt();
 
-                                    } else {
-                                        System.out.println("El valor de C es menor");
-                                    }
-                                } else {
-                                    System.out.println("El valor de C es mayor");
-                                    if (b < a) {
-                                        System.out.println("El valor de B es menor");
-                                    } else {
-                                        System.out.println("el valor de A es menor");
-                                    }
-
+                                if (a == c && b == c && a == b)
+                                {
+                                    System.out.println(":::: Por favor ingresa valores diferentes :::: ");
                                 }
+                                else if (a < c && b < c) {
+                                    System.out.println("El valor " +c+ " de la variable C es el mayor");
+                                    if (a<b)
+                                    {
+                                        System.out.println("El valor " +a+ " de la variable  A es menor");
+                                    }
+                                    else
+                                    {
+                                        System.out.println("El valor " +b+ " de la variable  B es menor");
+                                    }
+                                }
+                                else if (a<b)
+                                {
+                                    System.out.println("El valor " +b+ " de la variable B es el mayor" );
+                                    if (a<c)
+                                    {
+                                        System.out.println("El valor " +a+ " de la variable A es el menor");
+                                    }
+                                    else
+                                    {
+                                        System.out.println("El valor " +c+ " de la variable C es el menor");
+                                    }
+                                }
+                                else
+                                {
+                                    System.out.println("El valor " +a+ " de la variable A es el mayor");
+                                    if (b<c)
+                                    {
+                                        System.out.println("El valor " +b+ " de la variable  B es el menor");
+                                    }
+                                    else
+                                    {
+                                        System.out.println("El valor " +c+ " de la variable  C es el menor");
+                                    }
+                                }
+
                                 break;
                             default:
                                 System.out.println("Número no válido, por favor verifique");
@@ -445,10 +468,86 @@ public class Main {
                                     scannerMainFirst.nextLine();
                                 }
                         }
-                    }while (opc5 != 6);
+
+                    }while (opc5 != 5);
                     break;
 
                         case 6:
+                            do {
+                                System.out.println("******************************************************************");
+                                System.out.println("*******        6. CONDICIONAL SWITCH                       *******");
+                                System.out.println("******************************************************************");
+                                System.out.println("******************************************************************");
+                                System.out.println("*                                                                *");
+                                System.out.println("*  1. Explicación de Switch                                      *");
+                                System.out.println("*  2. Programa de Switch                                         *");
+                                System.out.println("*  3. Volver menú inicial                                        *");
+                                System.out.println("*                                                                *");
+                                System.out.println("******************************************************************");
+                                System.out.println("Por favor digita tu mejor opción:  ");
+                                opc6 = scannerMainFirst.nextInt();
+                                switch (opc6) {
+                                    case 1:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******         1. EXPLICACIÓN SWITCH                   **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("* El condicional switch case es una estructura que evalúa más de *");
+                                        System.out.println("* un caso y se caracteriza por: Selección de una opción entre    *");
+                                        System.out.println("* varias. Switch recibe un “caso” y lo evalúa hasta encontrar    *");
+                                        System.out.println("* el caso que corresponda. Se puede usar la opción “default”     *");
+                                        System.out.println("* para cuando no se encuentra el caso dado                       *");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("******************************************************************");
+                                        break;
+                                    case 2:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******         2. PROGRAMA SWITCH                      **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("* Ingresa la nota que deseas consultar                           *");
+                                        Scanner scanner = new Scanner(System.in);
+                                        nota = scanner.nextInt();
+                                        switch (nota)
+                                        {
+                                            case 1:
+                                                System.out.println("Su calificación es F ");
+                                                break;
+                                            case 2:
+                                                System.out.println("Su calificación es F ");
+                                                break;
+                                            case 3:
+                                            case 4:
+                                                System.out.println("Su calificación es D");
+                                                break;
+                                            case 5:
+                                            case 6:
+                                                System.out.println("Su calificación es C");
+                                                break;
+                                            case 7:
+                                            case 8:
+                                                System.out.println("Su calificación es B");
+                                                break;
+                                            case 9:
+                                            case 10:
+                                                System.out.println("Su calificación es A");
+                                                break;
+                                            default:
+                                                System.out.println("Número no válido, por favor verifique");
+
+                                        }
+                                        break;
+                                    default:
+                                        System.out.println("Número no válido, por favor verifique");
+                                        if (opc6 == 3) {
+
+                                            System.out.println("Si quieres volver al menú Principal presiona enter");
+                                            scannerMainFirst.nextLine();
+                                            scannerMainFirst.nextLine();
+                                        }
+                                    }
+                                }
+                            while (opc6 != 3);
                             break;
                         case 7:
                             do {
