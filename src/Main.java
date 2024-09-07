@@ -635,16 +635,24 @@ public class Main {
                                         System.out.println("******************************************************************");
                                         System.out.println("*******         1. EXPLICACIÓN DO WHILE                 **********");
                                         System.out.println("******************************************************************");
-                                        System.out.println("*un bucle do while es una estructura de control de flujo que     *");
-                                        System.out.println("*permite ejecutar un bloque de código repetidamente mientras se  *");
+                                        System.out.println("* Un bucle do while es una estructura de control de flujo que    *");
+                                        System.out.println("* permite ejecutar un bloque de código repetidamente mientras se *");
                                         System.out.println("* cumple una condición. La característica distintiva del bucle   *");
-                                        System.out.println("*do while es que el bloque de código se ejecuta al menos         *");
-                                        System.out.println("*una vez antes de que se evalúe la condición.                    *");
+                                        System.out.println("* do while es que el bloque de código se ejecuta al menos        *");
+                                        System.out.println("* una vez antes de que se evalúe la condición.                   *");
+                                        System.out.println("******************************************************************");
+                                        break;
+                                    case 2:
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*******          2. PROGRAMA DO WHILE                   **********");
+                                        System.out.println("******************************************************************");
+                                        System.out.println("*                                                                *");
+                                        System.out.println("*                                                                *");
                                         System.out.println("******************************************************************");
                                         break;
                                     default:
                                         System.out.println("Número no válido, por favor verifique");
-                                        if (opc5 == 4) {
+                                        if (opc8 == 3) {
 
                                             System.out.println("Si quieres volver al menú Principal presiona enter");
                                             scannerMainFirst.nextLine();
@@ -652,8 +660,9 @@ public class Main {
                                         }
 
                                 }
-                            }while (opc5 != 6);
+                            }while (opc8 != 3);
                             break;
+
                         case 9:
                             do {
                                 System.out.println("******************************************************************");
