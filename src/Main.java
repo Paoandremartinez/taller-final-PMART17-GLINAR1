@@ -2,6 +2,7 @@ import javax.naming.BinaryRefAddr;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -646,8 +647,26 @@ public class Main {
                                         System.out.println("******************************************************************");
                                         System.out.println("*******          2. PROGRAMA DO WHILE                   **********");
                                         System.out.println("******************************************************************");
-                                        System.out.println("*                                                                *");
-                                        System.out.println("*                                                                *");
+
+                                        Random magic = new Random();
+                                        int numalea = magic.nextInt(1,10);//numero magico
+                                        Scanner dato= new Scanner(System.in);
+                                        int usuario;
+                                        do {
+                                            System.out.println("¿QUE TANTA SUERTE TIENES...? Vamos averiguarlo");
+                                            System.out.println("Ingresa un número del 1 al 10 ");
+                                            usuario=dato.nextInt();
+                                            if (usuario<numalea){
+                                                System.out.println("El número ingresado es menor al número mágico");
+                                            } else if (usuario>numalea) {
+                                                System.out.println("El número ingresado es mayor al número mágico");
+                                            }else
+                                            {
+                                                System.out.println("Le atinaste al número, el número pensado por el sistema es " +numalea);
+                                            }
+                                        }while (usuario!=numalea);
+                                        System.out.println("*********");
+
                                         System.out.println("******************************************************************");
                                         break;
                                     default:
