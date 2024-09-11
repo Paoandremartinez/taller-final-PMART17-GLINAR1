@@ -157,7 +157,7 @@ public class Main {
                                 System.out.println("*******************************************************************");
                                 break;
                             default:
-                                System.out.println("Número no válido, por favor verifique");
+                                //System.out.println("Número no válido, por favor verifique");
                                 if (opc1 == 9) {
 
                                     System.out.println("Si quieres volver al menú Principal presiona enter");
@@ -167,7 +167,7 @@ public class Main {
                         }
 
                     }
-                    while (opc1 != 6);
+                    while (opc1 != 9);
                     break;
                 case 2:
                     System.out.println("******************************************************************");
@@ -185,16 +185,17 @@ public class Main {
                     System.out.println("******************************************************************");
                     break;
                 case 3:
-                        System.out.println("******************************************************************");
-                        System.out.println("*******          EXPLICACIÓN CONSTANTES                    *******");
-                        System.out.println("******************************************************************");
-                        System.out.println("******************************************************************");
-                        System.out.println("*   1. Constantes                                                *");
-                        System.out.println("*Una constante es un valor que no cambia durante la ejecución    *");
-                        System.out.println("del programa. Las constantes se definen utilizando la palabra    *");
-                        System.out.println("clave final, lo cual indica que el valor de esa variable no puede*");
-                        System.out.println("ser modificado una vez que ha sido asignado.                     *");
-                        System.out.println("******************************************************************");
+                    System.out.println("******************************************************************");
+                    System.out.println("*******          3. EXPLICACIÓN CONSTANTES                 *******");
+                    System.out.println("******************************************************************");
+                    System.out.println("******************************************************************");
+                    System.out.println("*                                                                *");
+                    System.out.println("* Una constante es un valor que no cambia durante la ejecución   *");
+                    System.out.println("* del programa. Las constantes se definen utilizando la palabra  *");
+                    System.out.println("* clave final, lo cual indica que el valor de esa variable no    *");
+                    System.out.println("* puede ser modificado una vez que ha sido asignado.             *");
+                    System.out.println("*                                                                *");
+                    System.out.println("******************************************************************");
                     break;
                 case 4:
                     do {
@@ -473,7 +474,7 @@ public class Main {
 
                                 break;
                             default:
-                                System.out.println("Número no válido, por favor verifique");
+                                //System.out.println("Número no válido, por favor verifique");
                                 if (opc5 == 5) {
 
                                     System.out.println("Si quieres volver al menú Principal presiona enter");
@@ -551,7 +552,7 @@ public class Main {
                                         }
                                         break;
                                     default:
-                                        System.out.println("Número no válido, por favor verifique");
+                                        //System.out.println("Número no válido, por favor verifique");
                                         if (opc6 == 3) {
 
                                             System.out.println("Si quieres volver al menú Principal presiona enter");
@@ -614,10 +615,9 @@ public class Main {
                                             default:
                                                 System.out.println("Número no válido, por favor verifique");
                                         }
-
                                         break;
                                     default:
-                                        System.out.println("Número no válido, por favor verifique");
+                                        //System.out.println("Número no válido, por favor verifique");
                                         if
                                         (opc72 == 3) {
                                             System.out.println("Si quieres volver al menú Principal presiona enter");
@@ -681,7 +681,7 @@ public class Main {
                                         System.out.println("******************************************************************");
                                         break;
                                     default:
-                                        System.out.println("Número no válido, por favor verifique");
+                                        //System.out.println("Número no válido, por favor verifique");
                                         if (opc8 == 3) {
 
                                             System.out.println("Si quieres volver al menú Principal presiona enter");
@@ -728,7 +728,7 @@ public class Main {
                                         System.out.println("******************************************************************");
                                         System.out.println("*                                                                *");
                                         System.out.println("* ¿Quieres saber cuanto es la sumatoria desde el número 1 hasta  *");
-                                        System.out.println("*  hasta llegar al número ingresado?                             *");
+                                        System.out.println("*  llegar al número ingresado?                                   *");
                                         System.out.println("*  1. Si                                                         *");
                                         System.out.println("*  2. No                                                         *");
                                         System.out.println("*  Ingresa la opción :                                           *");
@@ -759,7 +759,7 @@ public class Main {
                                         }
                                         break;
                                     default:
-                                        System.out.println("Número no válido, por favor verifique");
+                                        //System.out.println("Número no válido, por favor verifique");
                                         if
                                         (opc92 == 3) {
                                             System.out.println("Si quieres volver al menú Principal presiona enter");
@@ -806,7 +806,7 @@ public class Main {
                                         System.out.println("******************************************************************");
                                         System.out.println("*                                                                *");
                                         System.out.println("* ¿Quieres saber cuanto es la sumatoria desde el número 1 hasta  *");
-                                        System.out.println("*  hasta llegar al número ingresado?                             *");
+                                        System.out.println("*  llegar al número ingresado?                                   *");
                                         System.out.println("*  1. Si                                                         *");
                                         System.out.println("*  2. No                                                         *");
                                         System.out.println("*  Ingresa la opción :                                           *");
@@ -838,7 +838,7 @@ public class Main {
                                         }
                                         break;
                                     default:
-                                        System.out.println("Número no válido, por favor verifique");
+                                        //System.out.println("Número no válido, por favor verifique");
                                         if
                                         (opc102 == 3) {
                                             System.out.println("Si quieres volver al menú Principal presiona enter");
@@ -858,7 +858,7 @@ public class Main {
                     } //break;
 
             }
-            while (opcion != 3) ;
+            while (opcion !=11) ;
             scannerMainFirst.close();
         }
     }
