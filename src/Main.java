@@ -176,10 +176,10 @@ public class Main {
                     System.out.println("* El tipo de dato String es una clase que representa cadenas de  *");
                     System.out.println("* caracteres y se utiliza ampliamente en aplicaciones para       *");
                     System.out.println("* almacenar y manipular texto. En Java, una cadena de texto se   *");
-                    System.out.println("* define utilizando comillas dobles (\" \") alrededor del texto  *");
+                    System.out.println("* define utilizando comillas dobles (\" \") alrededor del texto    *");
                     System.out.println("*                                                                *");
-                    System.out.println("* String mensaje=\"hi you\"se inicializa la variable             *");
-                    System.out.println("* String nombre= new String (\"Juan\"); usando constructor       *");
+                    System.out.println("* String mensaje=\"hi you\"se inicializa la variable               *");
+                    System.out.println("* String nombre= new String (\"Juan\"); usando constructor         *");
                     System.out.println("*                                                                *");
                     System.out.println("******************************************************************");
                     break;
